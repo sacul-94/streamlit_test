@@ -45,7 +45,7 @@ if start_button:
     st.session_state['df_experiment_results'] = pd.concat([st.session_state['df_experimnent_results'], pd.DataFrame(data=[[st.session_state['experiment_no'], number_of_trials, mean]], columns=['no', 'iteraciones', 'media'])], axis=0)
     st.session_state['df_experiment_results'] = st.session_state['df_experiment_results'].reset_index(drop=True)
 
-st.wirte(st.session_state['df_experiment_results'])
+st.write(st.session_state['df_experiment_results'])
 
 
 
