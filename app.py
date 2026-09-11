@@ -21,7 +21,7 @@ def toss_coin(n):
             outcome_1_count += 1
         mean = outcome_1_count / outcome_no
         means.append(mean)
-        chart.line_chart(mean)
+        chart.line_chart(means)
         time.sleep(0.05)
 
     return mean
